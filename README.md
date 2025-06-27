@@ -135,18 +135,12 @@ Monitor performance and send alerts. CloudWatch watches your system metrics, and
 - **RDS automated backups** (7-day retention)
 - **Multi-AZ failover** capability
 - **Auto-scaling storage** up to 100GB
-- **Parameter groups** for custom configurations
 
 ### **Monitoring**
 - **CloudWatch Dashboard**: Real-time metrics
 - **Email alerts**: Performance and error notifications
 - **Auto Scaling events**: Automatic instance management
 - **Health checks**: Continuous application monitoring
-
-### **Updates & Scaling**
-- **Horizontal scaling**: Auto Scaling Groups handle demand
-- **Vertical scaling**: Instance types can be updated
-- **Database scaling**: Storage auto-scales automatically
 
 ### Step-by-Step Setup
 1. **Create VPC and Subnets**: Set up isolated network environment
