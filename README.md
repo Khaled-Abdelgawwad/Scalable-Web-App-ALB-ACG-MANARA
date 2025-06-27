@@ -23,3 +23,28 @@ The architecture follows AWS best practices for security, reliability, and cost 
 6. **Database stores** application data with automatic backups
 
 ## Key AWS Services Used
+### EC2
+Launch instances for the web app. These virtual servers run your application code and can be automatically created or removed based on demand.
+
+### Application Load Balancer (ALB)
+Distributes traffic across multiple instances. Acts as a smart traffic director that only sends requests to healthy servers and can handle SSL certificates.
+
+### Auto Scaling Group (ASG)
+Ensures instances scale based on demand. Automatically adds servers when busy and removes them when quiet, keeping your app available 24/7.
+
+### Amazon RDS (Optional)
+Backend database (MySQL/PostgreSQL) with Multi-AZ. Managed database service that handles backups, updates, and failover automatically.
+
+### IAM
+Role-based access to instances. Security service that controls what each server can access without storing passwords on the servers.
+
+### CloudWatch & SNS
+Monitor performance and send alerts. CloudWatch watches your system metrics, and SNS sends you notifications when something needs attention.
+
+## Benefits
+
+- **High Availability**: Your app stays online even if servers fail
+- **Cost Effective**: Only pay for servers you actually need
+- **Automatic Scaling**: No manual intervention needed during traffic spikes  
+- **Secure**: Built-in security features and isolated network
+- **Managed Database**: No database maintenance headaches
