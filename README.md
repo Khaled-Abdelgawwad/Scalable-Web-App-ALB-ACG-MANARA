@@ -12,3 +12,14 @@ This architecture automatically handles traffic spikes by adding more servers wh
 This project creates a production-ready web application infrastructure on AWS that can handle thousands of users simultaneously. The system automatically adjusts to traffic changes, ensuring your application performs well during both quiet periods and traffic spikes.
 
 The architecture follows AWS best practices for security, reliability, and cost optimization. All components work together to create a fault-tolerant system that can recover from failures automatically.
+
+## How It Works
+
+1. **Traffic comes in** through the Application Load Balancer
+2. **Load Balancer distributes** requests across healthy EC2 instances
+3. **Auto Scaling monitors** CPU usage and request counts
+4. **New instances launch** automatically when traffic increases
+5. **Instances terminate** automatically when traffic decreases
+6. **Database stores** application data with automatic backups
+
+## Key AWS Services Used
